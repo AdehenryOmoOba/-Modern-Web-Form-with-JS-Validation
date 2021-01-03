@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Adehenry: Modern Web Form with JS Validation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       <div class="box">
+           <h2>Login</h2>
+           <form action="" class="form" id="form">
+               <div class="input-box">     
+                   <input type="text" class="username" id="username" >
+                   <label id="respond">Username</label> 
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                   <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+               </div>
+               <div class="input-box">              
+                <input type="email" class="email" id="email" >
+                <label for="">Email</label> 
+                 <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+            </div>
+            <div class="input-box">
+                <input type="tel" class="telephone" id="telephone" >
+                    <label for="">Phone Number</label>
+                 <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+            </div>
+               <div class="input-box">
+                <input type="password" class="password" id="password" >
+                        <label for="">Password</label>
+                 <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>                 
+            </div>
+            <div class="input-box">
+                <input type="password" class="confirm-password" id="confirm-password" >
+                <label for="">Confirm Password</label>
+                 <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error message</small>
+            </div>
+            <button class="submit">Submit</button>
+           </form>
+       </div>
+        
+        <script src="./app.js" async defer></script>
+    </body>
+</html>

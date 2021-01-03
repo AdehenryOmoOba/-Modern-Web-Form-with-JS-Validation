@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 255, 0.4);
+  background-image: url(./pix.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.box {
+  height: 97vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 4rem;
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+.box h2 {
+  margin: 0 0 2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
+}
+.box .input-box {
+  position: relative;
+}
+.box .input-box input {
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  background: transparent;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+  border-bottom: 0.1rem solid #fff;
+}
+.box .input-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  letter-spacing: 0.1rem;
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: #fff;
+  /* pointer-events: none; */
+  transition: 0.5s;
+}
+
+/* .labelclick {
+  top: -2rem;
+  color: #03a9f4;
+  font-size: 1.2rem;
+} */
+button.submit {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #03a9f4;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%);
+}
+.fa {
+  position: absolute;
+  top: 25%;
+}
+.fa.fa-check-circle {
+  color: #2ecc71;
+  visibility: hidden;
+}
+.fa.fa-exclamation-circle {
+  color: red;
+  visibility: hidden;
+}
+.input-box.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.input-box.error i.fa-exclamation-circle {
+  color: red;
+  visibility: visible;
+}
+.input-box i {
+  font-size: 1.7rem;
+}
+.box .input-box.success input {
+  border-bottom: 0.1rem solid #2ecc71;
+}
+.box .input-box.error input {
+  border-bottom: 0.2rem solid red;
+}
+
+small {
+  position: absolute;
+  left: 0;
+
+  top: 5.3rem;
+  visibility: hidden;
+}
+.box .input-box.error small {
+  visibility: visible;
+  font-size: 1.3rem;
+  color: red;
+}
